@@ -1,0 +1,353 @@
+@charset "UTF-8";
+body{
+			font-family:Arial , sans-serif;
+			color: rgba (0,0,0,1);
+			background:url('../_imagens/rodape1.jpg')top left no-repeat,url('../_imagens/rodape1.jpg')bottom left no-repeat;
+			background-color:#ff6371;
+			position:relative;
+			
+}
+header#cabecalho{			
+			height: 150px;
+			
+			
+		
+}
+header#cabecalho h2 {
+			font-family: Brush Script Std,sans-serif;
+			font-size:20pt;
+			color:#000000;
+			padding:0px;
+			margin-bottom:0px;
+			position: absolute;
+			top: 45px;
+			left: 70px;
+}
+header#cabecalho h1{
+			font-family: Brush Script Std, sans-serif;
+			color: #000000;
+			font-size: 17pt;
+			padding:0px;			
+			margin-top:0px;
+			position: absolute;
+			top: 30px;
+			left: 70px;
+}
+nav#menu {
+		display:block;	
+}
+nav#menu ul{
+		list-style: none;
+		text-transform: none;
+		position: absolute;
+		top: -20px;
+		left: 270px;
+		font-size: 25px;
+		font-family: OCR A Std,sans-serif;
+		
+		
+}
+nav#menu li{	
+	display: inline-block;
+	background-color: none;
+	padding: 35px;
+	margin: 20px;
+	transition: background-color 1s;
+	color:#ffffff;
+}
+
+nav#menu li:hover {
+	color:#000000;
+}
+
+nav#menu h1{
+			display: none;
+		
+	
+}
+nav#menu a {
+		color: #000000;
+		text-decoration: none;
+}
+nav#menu a:hover {
+		color:#ffffff;
+		text-decoration: underline;
+}
+
+section#corpo {
+	display:block;
+	width:80px;
+	float:left;
+	border-right: none;
+	padding-right: 500px;
+	
+}
+section#corpo p {
+		font-family: sans-serif;
+		font-weight:normal;
+		color:#ffffff;
+		text-align: center;
+		padding:5px;
+		font-size:10pt;
+}
+
+h2#hinodetit{
+	color:#ffffff;
+	text-align: center;
+	padding:5px;
+	top:960px;
+	left:105px;
+	position:absolute;
+}
+p#hinodesub{
+	display:block;
+	width:200px;
+	float:left;
+	position:absolute;
+	top:1000px;
+	left:45px;
+	text-align: center;
+	
+}
+
+h2#acessoriostit{
+	color:#ffffff;
+	text-align: center;
+	padding:5px;
+	top:960px;
+	left:350px;
+	position:absolute;
+	font-size: 15pt;
+}
+p#acessoriossub{
+	display:block;
+	width:200px;
+	float:left;
+	position:absolute;
+	top:1020px;
+	left:320px;
+	text-align: center;
+	
+}
+
+h2#cabelotit{
+	color:#ffffff;
+	text-align: center;
+	padding:5px;
+	top:965px;
+	left:780px;
+	position:absolute;
+	font-size: 15pt;
+}
+p#cabelosub{
+	display:block;
+	width:200px;
+	float:left;
+	position:absolute;
+	top:990px;
+	left:710px;
+	text-align:center;
+	
+	
+	
+}
+
+h2#manicuretit{
+	color:#ffffff;
+	text-align: center;
+	padding:5px;
+	top:965px;
+	left:980px;
+	position:absolute;
+	font-size: 15pt;
+}
+
+p#manicuresub{
+	display:block;
+	width:200px;
+	float:left;
+	position:absolute;
+	top:990px;
+	left:980px;
+	text-align:center;
+	
+	
+	
+}
+
+
+
+
+img#borda1{
+		position: relative;
+		top: -60px;
+		left: 550px;
+		background: no-repeat;
+}
+
+img#CapaIndex{
+	position: relative;
+		top: -150px;
+		left: -8px;
+}
+h1#loja{
+	font-family:OCR A Std,sans-serif;
+	color:#ffffff;
+	position:absolute;
+	top:630px;
+	left:260px;
+	
+}
+h1#servicos{
+	font-family:OCR A Std,sans-serif;
+	position:absolute;
+	top:630px;
+	left:880px;
+	color:#ffffff;
+	
+}
+
+ul#album-fotos{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#album-fotos li span {
+	opacity:0;
+	color: #ffffff;
+	text-shadow: none;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+	
+	
+}
+ul#album-fotos li:hover {
+	transform: scale(1.5);
+	
+}
+ul#album-fotos li:hover span{
+	opacity: 1;
+	
+}
+
+ul#album-fotos li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid white;
+	background-color:#ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	transition: all .4s ease-in;
+	
+	
+}
+ul#album-fotos li#foto01 {
+	background: url('../_imagens/Hinode1.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+	
+	
+}
+
+ul#album-fotos li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto01{
+		position:absolute;
+		top:760px;
+		left:40px;
+}
+
+ul#album-fotos li#foto02 {
+	background: url('../_imagens/AcessoriosServiços2.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto02{
+		position:absolute;
+		top:760px;
+		left:310px;
+}
+
+ul#album-fotos li#foto03 {
+	background: url('../_imagens/CabeloServiços.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03{
+		position:absolute;
+		top:760px;
+		left:700px;
+}
+ul#album-fotos li#foto04 {
+	background: url('../_imagens/ManicurePedicure.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04{
+		position:absolute;
+		top:760px;
+		left:970px;
+}
+
+ul#album-fotos li#foto05 {
+	background: url('../_imagens/SpaDosPes2.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05{
+		position:relative;
+		top:700px;
+		left:600px;
+}
+
+footer#rodape{
+	clear:both;
+	height:200px
+}
+footer#rodape p {
+	text-align: center;
+	color:#000000
+}
+footer#rodape a{
+	text-decoration:none;
+	color:#000000;
+}
+footer#rodape a:hover{
+	text-decoration:underline;
+}
