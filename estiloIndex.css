@@ -1,12 +1,27 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lora|Open+Sans|Segoe+UI|Lato');
+
 body{
 			font-family:Arial , sans-serif;
 			color: rgba (0,0,0,1);
-			background:url('../_imagens/rodape1.jpg')top left no-repeat,url('../_imagens/rodape1.jpg')bottom left no-repeat;
-			background-color:#ff6371;
+			background:url('../_imagens/rodape1top.jpg')top center repeat-x,url('../_imagens/rodapenew.png')bottom center repeat-x;
+			background-color:#fff;
 			position:relative;
+			max-width: 1260px;
+			margin:0px auto 0px auto;
+			
 			
 }
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Header Cabeçalho ===========================================================================
+*=============================================================================================================================================================
+*==============================================================================================================================================================
+*/
 header#cabecalho{			
 			height: 150px;
 			
@@ -14,14 +29,25 @@ header#cabecalho{
 		
 }
 header#cabecalho h2 {
+			font-family:'Cookie',Brush Script Std,sans-serif;
+			font-size:20pt;
+			color:#000000;
+			z-index: 9999;
+			position:fixed;
+			float:left;
+			left: 60px;
+			
+}
+
+header#cabecalho h3 {
 			font-family: Brush Script Std,sans-serif;
 			font-size:20pt;
 			color:#000000;
-			padding:0px;
-			margin-bottom:0px;
-			position: absolute;
-			top: 45px;
-			left: 70px;
+			z-index: 9999;
+			position:fixed;
+			float:left;
+			left: 74px;
+			
 }
 header#cabecalho h1{
 			font-family: Brush Script Std, sans-serif;
@@ -33,46 +59,194 @@ header#cabecalho h1{
 			top: 30px;
 			left: 70px;
 }
-nav#menu {
-		display:block;	
-}
-nav#menu ul{
-		list-style: none;
-		text-transform: none;
-		position: absolute;
-		top: -20px;
-		left: 270px;
-		font-size: 25px;
-		font-family: OCR A Std,sans-serif;
-		
-		
-}
-nav#menu li{	
-	display: inline-block;
-	background-color: none;
-	padding: 35px;
-	margin: 20px;
-	transition: background-color 1s;
-	color:#ffffff;
-}
 
-nav#menu li:hover {
-	color:#000000;
-}
 
-nav#menu h1{
-			display: none;
-		
+
+.menu{
+	width: 100%;
+	height: 100px;
+	padding-left:10px;
+	margin-left: 0px;
+	background-color: rgba(255, 255, 255, 0.9);
+	float: left;
+	z-index: 9998;
+	position:fixed;
+	top: 0px;
+	left: 0px;
 	
 }
-nav#menu a {
-		color: #000000;
-		text-decoration: none;
+
+.logo{
+	float: left;
+	z-index: 9999;
+	position:fixed;
+	
+	
 }
-nav#menu a:hover {
-		color:#ffffff;
-		text-decoration: underline;
+.center{
+	
+	width: 70%;
+	height:120px;
+	max-width: 1260px;
+	margin:0px auto 0px auto;
 }
+
+.center ul{
+	width:70%;
+	height:120px;
+	float:left;
+}
+
+.center ul li{
+	width:50px;
+	padding:22px 36px;
+	list-style:none;
+	float: left;
+	text-align:center;
+	color:#C2C2C2;
+	font-family: 'OswaldLight', Arial,Helvetica,sans-serif;
+	font-size:25px;
+
+}
+
+.center ul li:first-child{
+	color: #993B18 !important;
+	
+	
+}
+
+.center ul li:hover{
+	transition: all 0.3s;
+	color: #993B18;
+	cursor: pointer;
+}
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== fim Header Cabeçalho ==============================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+
+
+
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Estilo Slide ===============================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+	#dvslider{
+			position: absolute;
+			top: 100px;
+			left: -2px;
+			width:1261px;
+			height: 460px;
+			border:1px solid #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: 1s;
+	}
+	
+	.btSlider{
+		background-color: rgba(0,0,0,0.0);
+		height: 15%;
+		color:rgba(255,255,255,0.4);
+		font-family:'Lato','Lora',Brush Script Std,sans-serif;
+		font-weight:normal;
+		font-size:68px;
+		cursor: pointer;
+		outline: none;
+		margin: 10px;
+		border:none;
+		
+	}
+	.btSlider:hover{
+	transition: all 0.3s;
+	color: #fff;
+	cursor: pointer;
+}
+	
+	
+	#dvload{
+		width: 100%;
+		height:5px;
+		margin-top: 25%;
+		border:1px solid rgba(255,255,255,0.3);
+	}
+	
+	#dvbarra{
+	width: 0%;
+	height: 100%;
+	background-color:rgba(255, 255, 255, 0.2);
+	
+	}
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Fim Estilo Slide ==================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Borda Slide ================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+img#borda1{
+		position: absolute;
+		top: 760px;
+		left: 610px;
+		background: no-repeat;
+}
+
+img#bordaSlide{
+		position: absolute;
+		top: 560px;
+		left: 1px;
+		background-repeat:no-repeat;
+}
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Fim Borda Slide ===================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Loja & Serviços ===========================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
 
 section#corpo {
 	display:block;
@@ -80,22 +254,49 @@ section#corpo {
 	float:left;
 	border-right: none;
 	padding-right: 500px;
+	margin: 1300px auto 0px auto;
 	
 }
 section#corpo p {
-		font-family: sans-serif;
+		font-family:'Segoe UI',Tahoma,'Open Sans',sans-serif;
 		font-weight:normal;
-		color:#ffffff;
+		color:#000;
 		text-align: center;
 		padding:5px;
-		font-size:10pt;
+		font-size:14px;
+}
+
+h1#loja{
+	font-family:'Cookie',Brush Script Std,OCR A Std,sans-serif;
+	color:#993B18;
+	position:absolute;
+	top:590px;
+	left:250px;
+	font-size: 55pt;
+	font-weight:normal;
+	
+}
+
+h1#servicos{
+	font-family:'Cookie',Brush Script Std,OCR A Std,sans-serif;
+	position:absolute;
+	top:590px;
+	left:890px;
+	color:#993B18;
+	font-size: 55pt;
+	font-weight:normal;
+	
 }
 
 h2#hinodetit{
-	color:#ffffff;
+	font-weight:300;
+	font-size:25px;
+	font-style:italic;
+	font-family: 'Lora','Open Sans', sans-serif;
+	color:#993B18;
 	text-align: center;
 	padding:5px;
-	top:960px;
+	top:965px;
 	left:105px;
 	position:absolute;
 }
@@ -104,47 +305,55 @@ p#hinodesub{
 	width:200px;
 	float:left;
 	position:absolute;
-	top:1000px;
+	top:1020px;
 	left:45px;
 	text-align: center;
+	
 	
 }
 
 h2#acessoriostit{
-	color:#ffffff;
+	font-size:25px;
+	font-style:italic;
+	font-weight:300;
+	font-family: 'Lora','Open Sans', sans-serif;
+	color:#993B18;
 	text-align: center;
 	padding:5px;
-	top:960px;
-	left:350px;
+	top:959px;
+	left:330px;
 	position:absolute;
-	font-size: 15pt;
+	
 }
 p#acessoriossub{
 	display:block;
 	width:200px;
 	float:left;
 	position:absolute;
-	top:1020px;
+	top:1040px;
 	left:320px;
 	text-align: center;
 	
 }
 
 h2#cabelotit{
-	color:#ffffff;
+	font-size:25px;
+	font-style:italic;
+	font-weight:300;
+	font-family: 'Lora','Open Sans', sans-serif;
+	color:#993B18;
 	text-align: center;
 	padding:5px;
 	top:965px;
-	left:780px;
+	left:771px;
 	position:absolute;
-	font-size: 15pt;
 }
 p#cabelosub{
 	display:block;
 	width:200px;
 	float:left;
 	position:absolute;
-	top:990px;
+	top:1020px;
 	left:710px;
 	text-align:center;
 	
@@ -153,13 +362,17 @@ p#cabelosub{
 }
 
 h2#manicuretit{
-	color:#ffffff;
+	font-size:25px;
+	font-style:italic;
+	font-weight:300;
+	font-family: 'Lora','Open Sans', sans-serif;
+	color:#993B18;
 	text-align: center;
 	padding:5px;
 	top:965px;
-	left:980px;
+	left:963px;
 	position:absolute;
-	font-size: 15pt;
+	
 }
 
 p#manicuresub{
@@ -167,46 +380,121 @@ p#manicuresub{
 	width:200px;
 	float:left;
 	position:absolute;
-	top:990px;
-	left:980px;
+	top:1020px;
+	left:969px;
 	text-align:center;
 	
 	
 	
 }
 
-
-
-
-img#borda1{
-		position: relative;
-		top: -60px;
-		left: 550px;
-		background: no-repeat;
+img#bordahinode{
+		position: absolute;
+		top: 1300px;
+		left: 1px;
+		background-repeat:no-repeat;
 }
 
-img#CapaIndex{
-	position: relative;
-		top: -150px;
-		left: -8px;
-}
-h1#loja{
-	font-family:OCR A Std,sans-serif;
-	color:#ffffff;
-	position:absolute;
-	top:630px;
+
+h3#presentetit{
+	font-weight:300;
+	font-size:60px;
+	font-style:italic;
+	font-family:'Cookie','Lora','Open Sans', sans-serif;
+	color:#993B18;
+	text-align: center;
+	padding:5px;
+	top:1420px;
 	left:260px;
-	
-}
-h1#servicos{
-	font-family:OCR A Std,sans-serif;
 	position:absolute;
-	top:630px;
-	left:880px;
-	color:#ffffff;
+	z-index: 9997;
 	
 }
 
+p#presentesub{
+	font-family:'Open Sans',sans-serif,'Lora';
+	font-size: 10px;
+	display:block;
+	width:600px;
+	float:left;
+	position:absolute;
+	top:1570px;
+	left:170px;
+	text-align:justify;
+	z-index: 9997;
+	
+	
+	
+}
+
+ul#fotopresente{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+
+ul#fotopresente li:hover {
+	transform: scale(1.5);
+	
+}
+
+ul#fotopresente li:hover span{
+	opacity: 1;
+	
+}
+
+
+ul#fotopresente li{
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	border: 5px solid white;
+	background-color:#ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	transition: all .4s ease-in;
+	
+	
+}
+ul#fotopresente li#foto06 {
+	background: url('../_imagens/Hinode4.jpeg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #ffffff;
+	
+	
+}
+
+ul#fotopresente li#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 300px 300px;
+}
+ul#fotopresente li#foto06{
+		position:absolute;
+		top:1440px;
+		left:860px;
+		z-index:9996;
+}
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Fim Loja & Serviços ==============================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Album Fotos ================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
 ul#album-fotos{
 	width: 1000px;
 	margin: 0 auto;
@@ -333,21 +621,160 @@ ul#album-fotos li#foto05:hover {
 ul#album-fotos li#foto05{
 		position:relative;
 		top:700px;
-		left:600px;
+		left:900px;
 }
 
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== fim Album Fotos ===================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Inicio Rodapé =====================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
+
+
+
+footer#rodape h1#numerotit{
+	padding:10px;
+	font-family:'Lora','Open Sans';
+	font-weight:100;
+	font-size: 19px;
+	position:absolute;
+	top:1800px;
+	left:45px;
+	text-align:center;
+}
+footer#rodape p#numerosub{
+	font-family:'Lora','Open Sans';
+	position:absolute;
+	color:#444444;
+	font-size:12px;
+	top:1843px;
+	left:55px;
+	text-align:center;
+}
+
+
+
+
+footer#rodape h1#atendimentotit{
+	padding:10px;
+	font-family:'Lora','Open Sans';
+	font-weight:100;
+	font-size: 19px;
+	position:absolute;
+	top:1800px;
+	left:250px;
+	text-align:center;
+	
+}
+
+footer#rodape p#atendimentosub{
+	font-family:'Lora','Open Sans';
+	color:#444444;
+	font-weight:100;
+	font-size:12px;
+	position:absolute;
+	top:1850px;
+	left:260px;
+	text-align:left;
+	line-height: 20px;
+}
 footer#rodape{
 	clear:both;
 	height:200px
 }
-footer#rodape p {
+footer#rodape p#direitosub{
 	text-align: center;
-	color:#000000
+	font-size: 10px;
+	color:#000;
+	position:absolute;
+	top:2115px;
+	left:480px;
+	
 }
-footer#rodape a{
-	text-decoration:none;
-	color:#000000;
+
+footer#rodape h1#socialtit{
+	padding:10px;
+	font-family:'Lora','Open Sans';
+	font-weight:100;
+	font-size: 19px;
+	position:absolute;
+	top:1800px;
+	left:519px;
+	text-align:center;
+	
 }
-footer#rodape a:hover{
-	text-decoration:underline;
+
+footer#rodape p#socialsub{
+	font-family:'Lora','Open Sans';
+	color:#a9a9a9;
+	font-size:12px;
+	position:absolute;
+	top:1840px;
+	left:528px;
+	text-align:center;
 }
+
+footer#rodape iframe{
+	position:absolute;
+	top:1900px;
+	left:975px;
+	
+}
+
+footer#rodape iframe#google-maps{
+	position:absolute;
+	top:1815px;
+	left:0px;
+}
+
+footer#rodape .face{
+	position:absolute;
+	top:1885px;
+	left:525px;
+}
+
+footer#rodape .insta{
+	position:absolute;
+	top:1885px;
+	left:575px;
+}
+
+
+.back-to-top{
+	width: 75px;
+	height: 77px;
+	display:block;
+	background: url('../_imagens/botão-topo-png-1.png') no-repeat;
+	opacity: 0.8;
+	position:fixed;
+	bottom: 50px;
+	right: 20px;
+	z-index:99999;
+	
+}
+
+.back-to-top:hover{
+opacity: 1;
+cursor:pointer
+}
+
+
+
+
+/*=============================================================================================================================================================
+*==============================================================================================================================================================
+*========================================================== Fim rodapé ========================================================================================
+*==============================================================================================================================================================
+*==============================================================================================================================================================
+*/
