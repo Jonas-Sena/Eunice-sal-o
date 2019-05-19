@@ -3,125 +3,120 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Eunice - Salão de beleza</title>
-	<link rel="stylesheet" type="text/css" href="C:\Users\NP370\Desktop\Projeto Site\_css\estiloIndex.css" media="all" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-	<script type="text/javascript" src="bottomscroll.js"></script>
-	<script type="text/javascript" src="EstiloSlide.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/estiloIndex.css" media="all" />
+	
 </head>
 <body onLoad="slide1()">
 	<div id="fb-root"></div>
+	<!--/#fb-root-->
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2"></script>
 	<img class="logo" src="\Users\NP370\Desktop\Projeto Site\_imagens\logotipo2.png"/> 
-	<div id="interface"	>
-	<header id="cabecalho">
-	<hgroup>
-	<h3 div="nomePrinc">M & N</h3>
-	</br></br>
-	<h2> Salão de beleza </h2>
-	</hgroup>
-	<nav>
-	<div class="menu">
-		<div class="center">
-			<ul type="square">
-				<li>Home</li>  
-				<li>Contato</li>  
-				<li>Galeria</li> 
-				<li>Serviços</li> 
-				<li>Loja</li>
+		<div id="interface"	>
+			<header id="cabecalho">
+				<hgroup>
+					<h3 div="nomePrinc">M & N</h3>
+					<br /><br />
+					<h2> Salão de beleza </h2>
+				</hgroup>
+				<nav>
+					<div class="menu">
+						<div class="center">
+							<ul type="square">
+								<li>Home</li>  
+								<li>Contato</li>  
+								<li>Galeria</li> 
+								<li>Serviços</li> 
+								<li>Loja</li>
+							</ul>
+						</div>
+						<!--/.center-->
+					</div>
+					<!--/.menu-->
+				</nav>
+		</header>
+		<!--/#cabecalho-->
+		<section id="corpo">  
+			<div id="dvslider">
+				<button class="btSlider" onclick="troca(-1)"><</button>
+					<div id="dvload">
+						<div id="dvbarra"></div>	
+					</div>
+					<!--/.dvload-->
+				<button class="btSlider" onclick="troca(1)">></button>
+			</div>
+			<!--/.dvslider-->
+		<section id="AreaDaLoja">
+			<h1 id="loja">Loja</h1>
+			<h2 id="hinodetit"> Hinode </h2>
+				<p id="hinodesub"> Atuando em 3 segmentos: perfumes, cosméticos e bem</br> estar a Hinode é uma das empresas que mais</br> tem conquistado clientes pela qualidade de seus produtos. </p>
+				<ul id="album-fotos">
+					<li id="foto01"><span>Hinode</span></li>
+				</ul>
+				<!--/.album-fotos-->	
+				<img id="borda1"  src="\Users\NP370\Desktop\Projeto Site\_imagens\borda2.png"/> 
+				<img id="bordaSlide"  src="\Users\NP370\Desktop\Projeto Site\_imagens\bordaSlide.png"/> 
+		</section>
+		<!--/#AreaDaLoja-->
+		<section id="AreaDosServiços">
+			<h1 id="servicos">Serviços</h1>
+			<h2 id="acessoriostit"> Acessorios de</br> moda feminina </h2>
+			<p id="acessoriossub"> Venha conhecer nossa variedade de produtos de moda feminina adulto e infantil. </p>
+			<h2 id="cabelotit"> Cabelo </h2>
+				<p id="cabelosub">
+					Cauterização <br />
+					Hidratação <br />
+					Corte <br />
+					etc.
+				</p>
+				<!--/#cabelosub-->
+			<h2 id="manicuretit"> Manicure e pedicure </h2>	
+				<p id="manicuresub">
+					Spá dos Pés <br />
+					Manicure <br />
+					Pedicure <br />
+					etc. <br />
+				</p>
+				<!--/#manicuresub-->
+			<ul id="album-fotos">
+				<li id="foto03"><span>Cabelo </li></span>
+				<li id="foto04"><span>Manicure e pedicure </li></span>
+				<li id="foto05"><span>Spá dos pes</li></span>
+				<li id="foto02"><span>Acessorios de moda feminina</li></span>
+			</ul>	
+			<!--/#album-fotos-->
+			<h3 id="presentetit">Presenteie quem ama ! </h3>
+			<p id="presentesub"> M & N <b>Salão de beleza em Jaguaripe</b> - Presenteie pessoas especiais em datas especiais. Alternativa luxuosa, prática e moderna que facilita a sua vida e a do presenteado. Informe-se com a nossa recepção e surpreenda quem você ama! </p>
+			<ul id="fotopresente">
+				<li id="foto06"><span></span>
 			</ul>
-		</div>
-	</div>
-	</nav>
-	</header>
-<section id="corpo">  
-		
-		<div id="dvslider">
-		<button class="btSlider" onclick="troca(-1)"><</button>
-		<div id="dvload">
-			<div id="dvbarra"></div>	
-		</div>
-		<button class="btSlider" onclick="troca(1)">></button>
-		</div>
-	
-
-
-
-	<section id="AreaDaLoja">
-		<h1 id="loja">Loja</h1>
-		<h2 id="hinodetit"> Hinode </h2>
-		<p id="hinodesub"> Atuando em 3 segmentos: perfumes, cosméticos e bem</br> estar a Hinode é uma das empresas que mais</br> tem conquistado clientes pela qualidade de seus produtos. </p>
-		<ul id="album-fotos">
-			<li id="foto01"><span>Hinode</li></span>	
-			
-			
-			<img id="borda1"  src="\Users\NP370\Desktop\Projeto Site\_imagens\borda2.png"/> 
-			<img id="bordaSlide"  src="\Users\NP370\Desktop\Projeto Site\_imagens\bordaSlide.png"/> 
-
-</section>
-	<section id="AreaDosServiços">
-		<h1 id="servicos">Serviços</h1>
-		<h2 id="acessoriostit"> Acessorios de</br> moda feminina </h2>
-		<p id="acessoriossub"> Venha conhecer nossa variedade de produtos de moda feminina adulto e infantil. </p>
-		<h2 id="cabelotit"> Cabelo </h2>
-		<p id="cabelosub">
-			Cauterização</br>
-			Hidratação</br>
-			Corte</br>
-			etc.</p>
-		<h2 id="manicuretit"> Manicure e pedicure </h2>	
-		<p id="manicuresub">
-		Spá dos Pés </br>
-		Manicure</br>
-		Pedicure</br>
-		etc.</br>
-		</p>
-		
-		<ul id="album-fotos">
-			<li id="foto03"><span>Cabelo </li></span>
-			<li id="foto04"><span>Manicure e pedicure </li></span>
-			<li id="foto05"><span>Spá dos pes</li></span>
-			<li id="foto02"><span>Acessorios de moda feminina</li></span>
-		</ul>	
-		
-		<h3 id="presentetit">Presenteie quem ama ! </h2>
-		<p id="presentesub"> M & N <b>Salão de beleza em Jaguaripe</b> - Presenteie pessoas especiais em datas especiais. Alternativa luxuosa, prática e moderna que facilita a sua vida e a do presenteado. Informe-se com a nossa recepção e surpreenda quem você ama! </p>
-		
-		<ul id="fotopresente">
-		<li id="foto06"><span></span>
-		</ul>
-		
-		
-		<img id="bordahinode"  src="\Users\NP370\Desktop\Projeto Site\_imagens\bordahinode.png"/> 
-		
+			<!--/#fotopresente-->
+			<img id="bordahinode"  src="\Users\NP370\Desktop\Projeto Site\_imagens\bordahinode.png"/> 
+		</section>
+		<!--/#AreaDosServiços-->
 	</section>
-</section>
-
-
-<footer id="rodape">
-<h1 id="numerotit"> Contato </h1>
-<p id="numerosub"> (71) 98762-2382  </br></br>(71) 98738-6336 </p>
-
-<h1 id="atendimentotit">Horário de atendimento</h1>
-<p id="atendimentosub"><b>SEGUNDA À SABADO</b> </br>De 8h às 20h </br> <b>DOMINGO</b></br> De 8h às 13h </p>
-<p id="direitosub">M & N Salão de Beleza. Todos os direitos reservados.</br>Desenvolvido por Jonas Sena.<br></p>
-<h1 id="socialtit"> Nossa presença On-Line</h1>
-<p id="socialsub"> Siga-nos nas redes sociais.</p>
-<h1 id="atendimentotit">Horário de atendimento</h1>
-<p id="socialsub"> Siga-nos nas redes sociais.</p>
-<a  href="https://www.instagram.com/mnsalao/?hl=pt-br" target= "_blank"><img class="insta" src="\Users\NP370\Desktop\Projeto Site\_imagens\instagram-logo.png"/>  </a>
-
-<a  href="https://www.facebook.com/nicinhasalao/?modal=admin_todo_tour" target= "_blank"><img class="face" src="\Users\NP370\Desktop\Projeto Site\_imagens\facebook-logo.png"/> </a>
-
-
-
-<span class="back-to-top">
-
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnicinhasalao%2F%3Fmodal%3Dadmin_todo_tour&tabs=timeline&width=340&height=100%25&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-
-</footer>
-
-</div>
+	<!--/#corpo-->
+	<footer id="rodape">
+		<h1 id="numerotit"> Contato </h1>
+			<p id="numerosub"> (71) 98762-2382  </br></br>(71) 98738-6336 </p>
+		<h1 id="atendimentotit">Horário de atendimento</h1>
+			<p id="atendimentosub"><b>SEGUNDA À SABADO</b> </br>De 8h às 20h </br> <b>DOMINGO</b></br> De 8h às 13h </p>
+			<p id="direitosub">M & N Salão de Beleza. Todos os direitos reservados.</br>Desenvolvido por Jonas Sena.<br></p>
+		<h1 id="socialtit"> Nossa presença On-Line</h1>
+			<p id="socialsub"> Siga-nos nas redes sociais.</p>
+		<h1 id="atendimentotit">Horário de atendimento</h1>
+			<p id="socialsub"> Siga-nos nas redes sociais.</p>
+				<a  href="https://www.instagram.com/mnsalao/?hl=pt-br" target= "_blank"><img class="insta" src="\Users\NP370\Desktop\Projeto Site\_imagens\instagram-logo.png"/>  </a>
+				<a  href="https://www.facebook.com/nicinhasalao/?modal=admin_todo_tour" target= "_blank"><img class="face" src="\Users\NP370\Desktop\Projeto Site\_imagens\facebook-logo.png"/> </a>
+					<span class="back-to-top">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnicinhasalao%2F%3Fmodal%3Dadmin_todo_tour&tabs=timeline&width=340&height=100%25&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+	</footer>
+	<!--/#rodape-->
+		</div>
+		<!--/#interface-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="assets/js/Estilo.Slide.js"></script>
+	<script type="text/javascript" src="assets/js/bottomscroll.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
 
